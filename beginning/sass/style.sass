@@ -12,7 +12,7 @@ $baseFontSize: 1em
 body
     font-family: 'Roboto', sans-serif
     font-size: $baseFontSize
-    line-height: 2em
+    line-height: $baseFontSize * 2
     background: url('../images/bg.gif') $whiteColor repeat-x
     
 main
@@ -36,12 +36,12 @@ nav
         margin-top: 95px
         li
             display: inline
-            font-size: 0.8em
+            font-size: $baseFontSize * 0.8
             margin-right:  10px
             a
                 color: $navColor
                 text-decoration: none
-                letter-spacing: -0.01em
+                letter-spacing: -$baseFontSize * 0.01
                 &:hover
                     color: $whiteColor
                 
@@ -56,18 +56,18 @@ header
     h1
         color: $navColor
         font-weight: $fontWeight
-        font-size: 4em
+        font-size: $baseFontSize * 4
         line-height: 0
     h2
         color: $whiteColor
-        font-weight: $fontWeight x 9
-        font-size: 2.5em
+        font-weight: $fontWeight * 9
+        font-size: $baseFontSize * 2.5
         line-height: 0
         margin-bottom: 70px
     h3
         color: $grayColor
-        font-weight: $fontWeight x 4
-        font-size: 2em
+        font-weight: $fontWeight * 4
+        font-size: $baseFontSize * 2
         line-height: 0
         margin-bottom: $space
         
@@ -79,7 +79,7 @@ header
     margin: 0 auto
     h1
         color: $whiteColor
-        font-size: 2.5em
+        font-size: $baseFontSize * 2.5
         font-weight: $fontWeight
         padding-top: $space
         
@@ -88,8 +88,8 @@ header
     margin: 20px auto
     h3
         color: $grayColor
-        font-size: 2em
-        font-weight: $fontWeight x 4
+        font-size: $baseFontSize * 2
+        font-weight: $fontWeight * 4
     #products
         width: 460px
         float: left
@@ -99,7 +99,7 @@ header
         article
             margin-bottom: 40px
         h4
-            line-height: 1em
+            line-height: $baseFontSize
     #testimonials
         width: 460px
         float: right
